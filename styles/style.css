@@ -1,1 +1,17 @@
-/* место для вашего кода */
+.style-blocks {
+  background-color: aqua;
+  min-height: 50px;
+}
+
+.header {
+  padding: 92px 49px 92px 51px;
+}
+
+.casper-block {
+  min-height: 180px;
+  background-color: white;
+}
+
+.footer {
+  padding: 0 50px 90px;
+}
