@@ -1,21 +1,23 @@
 .style-blocks {
   background-color: aqua;
-  min-height: 50px;
+  min-height: 10px;
+  width: 1440px;
+  margin: auto;
 }
 
 .header {
-  padding: 92px 49px 92px 51px;
+  padding: 92px 49px 95px 51px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
 }
 
-.header__menu {
+.header-menu {
   display: flex;
 }
 
-.header__links-list {
+.header-links-list {
   display: flex;
   flex-direction: row;
   list-style: circle;
@@ -24,29 +26,29 @@
   column-gap: 33px;
 }
 
-.header__links-list-item_no-bullit {
+.header-links-list-item-no-bullit {
   list-style: none;
 }
 
-.header__link_active {
+.header-link_active {
   text-decoration: none;
 }
 
-.header__link {
+.header-link {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.header__logo {
+.header-logo {
   margin-right: 150px;
 }
 
-.header__logo-image {
+.header-logo-image {
   width: 148px;
   height: 105px;
 }
 
-.header__address {
+.header-address {
   display: flex;
   flex-direction: column;
   margin-right: 2px;
@@ -62,6 +64,106 @@
   font-weight: 400;
   line-height: 24.3px;
   text-underline-offset: 4px;
+}
+
+.cover {
+  position: relative;
+  z-index: 1;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -17px;
+  color: #fff;
+}
+
+.overlay {
+  height: 100%;
+  width: 1440px;
+  position: absolute;
+  z-index: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.cover-title {
+  display: block;
+  padding: 165px 20px 135px 50px;
+  position: relative;
+  z-index: 3;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text-center {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 30px;
+  line-height: 100%;
+}
+
+.aligned-text-right {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  line-height: 100%;
+}
+
+.letter-spacing-extended {
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 60px;
+  text-transform: uppercase;
+}
+
+.no-letter-spacing {
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 60px;
+  text-transform: uppercase;
+}
+
+.cover-description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 50px 50px 412px;
+}
+
+.cover-description-text {
+  margin-top: 12px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 17px;
+}
+
+.word-spacing {
+  word-spacing: 23px;
+}
+
+.bet-button {
+  width: 257px;
+  height: 52px;
+  margin-left: 78px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .casper-block {
