@@ -1,16 +1,16 @@
 .style-blocks {
-  background-color: aqua;
-  min-height: 10px;
   width: 1440px;
   margin: auto;
 }
 
 .header {
-  padding: 92px 49px 95px 51px;
+  padding: 92px 49px 92px 51px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .header-menu {
@@ -21,12 +21,10 @@
   display: flex;
   flex-direction: row;
   list-style: circle;
-  font-size: 18px;
-  font-weight: 400;
   column-gap: 33px;
 }
 
-.header-links-list-item-no-bullit {
+.header-links-list-item_no-bullit {
   list-style: none;
 }
 
@@ -51,7 +49,7 @@
 .header-address {
   display: flex;
   flex-direction: column;
-  margin-right: 2px;
+  padding-right: 2px;
 }
 
 .address {
@@ -60,15 +58,13 @@
   white-space: nowrap;
   font-family: Raleway;
   font-style: normal;
-  font-size: 18px;
-  font-weight: 400;
   line-height: 24.3px;
   text-underline-offset: 4px;
 }
 
 .cover {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   background-image: url(/images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,11 +74,13 @@
 
 .overlay {
   height: 100%;
-  width: 1440px;
+  width: 100%;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   background-color: #000;
   opacity: 0.6;
+  top: 0;
+  left: 0;
 }
 
 .cover-title {
@@ -114,17 +112,12 @@
 }
 
 .letter-spacing-extended {
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
   letter-spacing: 60px;
   text-transform: uppercase;
 }
 
 .no-letter-spacing {
   font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 100%;
   letter-spacing: 60px;
   text-transform: uppercase;
@@ -141,7 +134,6 @@
 .cover-description-text {
   margin-top: 12px;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
@@ -153,24 +145,176 @@
 }
 
 .bet-button {
-  width: 257px;
-  height: 52px;
+  padding: 12px 32px;
   margin-left: 78px;
   background-color: transparent;
   border: 1px solid #fff;
   font-size: 22px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
   color: #fff;
 }
 
-.casper-block {
-  min-height: 180px;
-  background-color: white;
+.lots {
+  background-color: #fff;
+  padding: 180px 50px 182px;
+}
+
+.lots-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots-card-list {
+  padding: 27px 0 30px;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.card-link {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 430px;
+  min-height: 450px;
+  color: #fff;
+  padding: 50px 40px;
+}
+
+.card__title {
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.card__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  position: relative;
+  z-index: 1;
+}
+
+.card-type-film {
+  background-image: url(/images/card-lot-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.card-type-book {
+  background-image: url(/images/card-lot-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.card-type-picture {
+  background-image: url(/images/card-lot-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.lots-look-more-link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  padding-left: 40px;
+  text-underline-offset: 4px;
+}
+
+.about {
+  background-color: #fff;
+  padding: 0 50px 180px;
+  display: grid;
+  grid-template: auto auto / 430px auto;
+  column-gap: 25px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: start;
+  background-image: url(/images/logo-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 148px 114px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about__text {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  gap: 25px;
 }
 
 .footer {
   padding: 0 50px 90px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.footer-menu-list {
+  list-style: none;
+}
+
+.footer-menu-list-item {
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-offset: 4px;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 240px;
+}
+
+.footer-social-icon {
+  max-width: 48px;
 }
