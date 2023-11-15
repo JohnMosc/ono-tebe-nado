@@ -28,7 +28,7 @@
   list-style: none;
 }
 
-.header-link_active {
+.header-link-active {
   text-decoration: none;
 }
 
@@ -283,12 +283,8 @@
   text-underline-offset: 4px;
 }
 
-.footer__menu-link_active {
+.footer-menu-link-active {
   text-decoration: none;
-}
-
-.footer__menu-link {
-  text-decoration: underline;
 }
 
 .footer-social-list {
